@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-last = number % 10
-
-if (last) > 5:
-    print('Last digit of', number, 'is', last, 'and is greater than 5')
-elif (last) == 0:
-    print('Last digit of', number, 'is', last, 'and is 0')
+grater_5 = "and is greater than 5"
+zero = "and is 0"
+less_6 = "and is less than 6 and not 0"
+print("Last digit of", end=" ")
+if (number % 10 > 5):
+    print("{} is {} {}".format(number, number % 10, grater_5))
+elif (number % 10 == 0):
+    print("{} is {} {}".format(number, number % 10, zero))
+elif (number < 0):
+    print("{} is -{} {}".format(number, (number * -1) % 10, less_6))
 else:
-    print('Last digit of', number, 'is', last, 'and is less than 6 and not 0')
+    print("{} is {} {}".format(number, number % 10, less_6))
