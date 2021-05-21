@@ -26,4 +26,4 @@ OK. But what about this?
 ['x', 2, 3]
 >>>
 ```
-Hugo Cortés
+Hugo Cortés / hugocortesmu@gmail.com
