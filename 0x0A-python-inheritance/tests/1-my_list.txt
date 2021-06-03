@@ -1,0 +1,34 @@
+check ```MyList class```
+"""
+- Prototype: def print_sorted(self):
+- ou can assume that all the elements of the list will be of type int
+- You are not allowed to import any module
+"""
+-----------------------
+Checking docstring mod:
+    >>> __import__('1-my_list').__doc__ != None
+    True
+
+Import the class:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+check class docstring:
+
+    >>> MyList.__doc__ != None
+    True
+
+Adding elements in the list:
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+
+Print the list:
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+
+
+
