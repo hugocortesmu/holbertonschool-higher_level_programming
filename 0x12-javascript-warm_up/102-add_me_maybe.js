@@ -1,6 +1,6 @@
 #!/usr/bin/nodejs
 
-// increments and calls a function.
+// Write a function that increments and calls a function.
 function addMeMaybe (number, thefunction) {
   number += 1;
   thefunction(number);
