@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-/* script that searches the second
+/* write script that searches the second
 biggest integer in the list of arguments */
 const myArray = process.argv.slice(2);
 
